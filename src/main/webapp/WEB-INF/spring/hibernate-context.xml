@@ -10,11 +10,11 @@
 
 	<!-- Hibernate DAO configuration.
 	Use DriverManagerDataSource for testing only. In a J2EE container use a JNDI DataSource provided by the container -->
-	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/jstudyplanner"/>
-        <property name="username" value="jstudyplanner"/>
-        <property name="password" value="myPassword"/>
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="${VCAP_SERVICES.cleardb[0].credentials.jdbcUrl}"/>
+        <property name="username" value="${VCAP_SERVICES.cleardb[0].credentials.username}"/>
+        <property name="password" value="${VCAP_SERVICES.cleardb[0].credentials.password}"/>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">

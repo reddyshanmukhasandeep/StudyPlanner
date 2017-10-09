@@ -23,6 +23,7 @@ public class HibernateCourseDAO implements CourseDAO {
 	
 	// injection should be defined in the hibernate-context.xml
 	private SessionFactory sessionFactory;
+
 	
 	@Transactional(propagation=Propagation.NOT_SUPPORTED)
 	public void setSessionFactory(SessionFactory sessionFactory) {
@@ -34,6 +35,7 @@ public class HibernateCourseDAO implements CourseDAO {
 		if (course.getEnabled() == null) {
 			course.setEnabled((byte) 0);
 		}
+		
 		this.sessionFactory.getCurrentSession().persist(course);
 	}
 

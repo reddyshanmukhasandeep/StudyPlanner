@@ -4,10 +4,7 @@ import java.util.List;
 
 import com.jstudyplanner.domain.Course;
 
-/**
- * Defines CRUD methods for Course entities
- * @author oleg
- */
+
 public interface CourseDAO {
 	public void add(Course course);
 	public void save(Course course);
