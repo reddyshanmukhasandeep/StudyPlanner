@@ -5,5 +5,5 @@ applications:
   instances: 1
   services:
     - MySQL
-  path: jStudyPlanner-1.0.0-BUILD-SNAPSHOT.war
+  path: target/jStudyPlanner-1.0.0-BUILD-SNAPSHOT.war
  
