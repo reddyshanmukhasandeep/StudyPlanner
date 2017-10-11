@@ -1,7 +1,7 @@
 <h1>
 	jStudyPlanner home page  
 </h1>
-<p>The time on the server is ${serverTime}.</p>
+<p>Currently he time on the server is ${serverTime}.</p>
 <p class="top30">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ac est ac pharetra. 
 	Maecenas in fringilla nulla, a vestibulum quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
