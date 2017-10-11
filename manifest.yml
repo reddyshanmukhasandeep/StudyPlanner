@@ -6,5 +6,5 @@ applications:
   services:
     - MySQL
   path: target/jStudyPlanner-1.0.0-BUILD-SNAPSHOT.war
-  buildpack:https://github.com/cloudfoundry/java-buildpack
+  buildpack: https://github.com/cloudfoundry/java-buildpack
  
