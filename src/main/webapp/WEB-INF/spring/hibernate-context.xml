@@ -12,9 +12,9 @@
 	Use DriverManagerDataSource for testing only. In a J2EE container use a JNDI DataSource provided by the container -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
 	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="${VCAP_SERVICES.["p-mysql"][0].credentials.jdbcUrl}"/>
-        <property name="username" value="${VCAP_SERVICES.["p-mysql"][0].credentials.username}"/>
-        <property name="password" value="${VCAP_SERVICES.["p-mysql"][0].credentials.password}"/>
+       <property name="url" value="${VCAP_SERVICES.[p-mysql][0].credentials.jdbcUrl}"/>
+        <property name="username" value="${VCAP_SERVICES.[p-mysql][0].credentials.username}"/>
+        <property name="password" value="${VCAP_SERVICES.[p-mysql][0].credentials.password}"/>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
