@@ -3,7 +3,7 @@
 </h1>
 <p>Currently the time on the server is ${serverTime}.</p>
 <p class="top30">
-	Welcome Sandeep!!!, consectetur adipiscing elit. In auctor ac est ac pharetra. 
+	Welcome Sandeep !!, consectetur adipiscing elit. In auctor ac est ac pharetra. 
 	Maecenas in fringilla nulla, a vestibulum quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
 	Morbi id tincidunt dui. Donec nec diam blandit, tristique massa non, auctor sem. Donec iaculis lobortis pulvinar. 
 	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam at aliquam nisi. 
